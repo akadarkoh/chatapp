@@ -1,0 +1,6 @@
+{
+    "requestContext": {
+        "connectionId": "abc123"
+    },
+    "body": "{\"sessionId\": \"123\", \"message\": \"Send Message!\"}"
+}

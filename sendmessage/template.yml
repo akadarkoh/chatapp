@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  SendMessageFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: send_message.lambda_handler
+      Runtime: python3.9
+      CodeUri: .
+      MemorySize: 128
+      Timeout: 3
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - AmazonDynamoDBFullAccess
+      Environment:
+        Variables:
+          CHAT_TABLE: ChatMessages

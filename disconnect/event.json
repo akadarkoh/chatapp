@@ -1,0 +1,7 @@
+{
+    "requestContext": {
+        "connectionId": "abc123",
+        "eventType": "DISCONNECT"
+    },
+    "body": "{\"sessionId\": \"123\", \"message\": \"Disconnect!\"}"
+}
